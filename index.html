@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARQFI | MiniFarm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <h1>MiniFarm</h1>
+    <section id="container">
+        <div class="bloques">
+            <input type="button" value="Recargar" class="button" id="b-start" onclick="location.reload()" />
+        </div>
+            <input type="text" class="btext" id="n-vacas" readonly />
+            <img src="img/vaca.png" alt="Vaca" class="img-gifs" />
+        </div>
+        <div class="bloques">
+            <input type="text" class="btext" id="n-cerdos" readonly />
+            <img src="img/cerdo.png" alt="Cerdo" class="img-gifs" />
+        </div>
+        <div class="bloques">
+            <input type="text" class="btext" id="n-pollos" readonly />
+            <img src="img/pollo.png" alt="Pollo" class="img-gifs" />
+        </div>
+    </section>
+    <canvas width="500" height="500" id="minifarm"></canvas>
+    <p>Mover LOBO con teclado o touchpad</p>
+    <div class="position">
+        <img src="img/lobo.png" alt="Lobo" class="lobo-solitario" id="moverLobo" style="left:0;top:0%;" />
+    </div>
+    <footer>
+        <a title="Mi sitio web" href="https://marianorluna.com" target="_blank">www.marianorluna.com</a>
+    </footer>
+    <script src="arrastrar.js"></script>
+    <script src="minifarm.js"></script>
+</body>
+</html>
